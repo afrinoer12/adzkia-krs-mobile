@@ -1,16 +1,104 @@
-# adzkia_krs_mobile
+# 🎓 Adzkia KRS Mobile
 
-A new Flutter project.
+<div align="center">
 
-## Getting Started
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Ready-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Educational-blue?style=for-the-badge)
 
-This project is a starting point for a Flutter application.
+</div>
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📌 Tentang Project
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Adzkia KRS Mobile** adalah aplikasi mobile berbasis **Flutter** untuk membantu proses pengisian **Kartu Rencana Studi (KRS)** mahasiswa.
+
+Aplikasi ini dibuat sebagai project pembelajaran Flutter dengan fitur utama seperti login mahasiswa dan dosen, daftar mata kuliah, pengambilan KRS, riwayat KRS, serta validasi KRS oleh dosen.
+
+---
+
+## ✨ Fitur Aplikasi
+
+### 👨‍🎓 Mahasiswa
+
+- Login sebagai mahasiswa
+- Melihat dashboard mahasiswa
+- Melihat daftar mata kuliah
+- Mencari mata kuliah berdasarkan nama, kode, atau dosen
+- Filter mata kuliah berdasarkan semester
+- Mengambil mata kuliah
+- Menghapus mata kuliah dari KRS
+- Melihat total SKS
+- Melihat riwayat KRS
+- Melihat status KRS:
+  - Menunggu ACC
+  - Disetujui
+  - Ditolak
+
+### 👨‍🏫 Dosen
+
+- Login sebagai dosen
+- Melihat dashboard dosen
+- Melihat pengajuan KRS mahasiswa
+- Validasi KRS mahasiswa
+- ACC atau tolak mata kuliah
+- Melihat data mahasiswa
+- Melihat ringkasan KRS mahasiswa
+
+---
+
+## 🖼️ Tampilan Aplikasi
+
+Aplikasi menggunakan desain modern dengan:
+
+- UI clean dan rapi
+- Warna utama biru dan merah
+- Card layout modern
+- Search bar
+- Filter semester
+- Badge status KRS
+- Dashboard statistik
+- Tampilan mobile friendly
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- **Flutter**
+- **Dart**
+- **Material Design 3**
+- **Data Dummy / Local Data**
+
+---
+
+## 📂 Struktur Folder
+
+```bash
+lib/
+│
+├── main.dart
+│
+├── models/
+│   ├── matkul_model.dart
+│   └── krs_model.dart
+│
+├── data/
+│   └── dummy_data.dart
+│
+├── widgets/
+│   ├── dashboard_menu.dart
+│   ├── matkul_card.dart
+│   ├── status_badge.dart
+│   └── summary_card.dart
+│
+└── pages/
+    ├── login_page.dart
+    ├── mahasiswa_dashboard.dart
+    ├── dosen_dashboard.dart
+    ├── daftar_matkul_page.dart
+    ├── ambil_krs_page.dart
+    ├── riwayat_krs_page.dart
+    ├── validasi_krs_page.dart
+    └── data_mahasiswa_page.dart
